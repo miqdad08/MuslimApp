@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.muslimapp"><uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".TakbirActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ScreenActivity"/>
+        </activity>
+        <activity android:name=".TahmidActivity"/>
+        <activity android:name=".JadwalActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ScreenActivity"/>
+        </activity>
+        <activity android:name=".QiblatActivity">
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".ScreenActivity"/>
+        </activity>
+        <activity android:name=".DetailDzikir">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ScreenActivity"/>
+        </activity>
+        <activity android:name=".Tasbeeh"/>
+        <activity android:name=".AsmaulHusna">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ScreenActivity"/>
+        </activity>
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".ScreenActivity" />
+        <activity android:name=".MainActivity" />
+        <receiver android:name=".AlarmReceiver"
+            android:process=":remote"/>
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".ScreenActivity"/>
+    </application>
+
+</manifest>

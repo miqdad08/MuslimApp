@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Tasbeeh">
+
+    <Button
+    android:id="@+id/btn_reset"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Reset"
+    android:textStyle="bold"
+    android:background="@drawable/btn"
+    android:layout_gravity="end" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:id="@+id/tv_tahmid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tasbih"
+            android:textSize="50sp"/>
+
+        <TextView
+            android:id="@+id/tv_digit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginBottom="20dp"
+            android:textSize="50sp"/>
+
+
+        <Button
+            android:id="@+id/btn_prees"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:textSize="30sp"
+            android:background="@drawable/btn"
+            android:text="PRESS HERE"/>
+
+        <Button
+            android:id="@+id/btn_tasbih"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Tahmid"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/btn"
+            android:layout_marginTop="50dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
